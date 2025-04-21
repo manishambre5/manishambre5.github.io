@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Saira+Condensed:wght@100;200;300;400;500;600;700;800;900&family=Sofia+Sans+Condensed:ital,wght@0,1..1000;1,1..1000&family=Stint+Ultra+Condensed&family=Syncopate:wght@400;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-me: Syncopate, sans-serif;
+  --font-primary: Saira Condensed, sans-serif;
+  --font-mono: JetBrains Mono, monospace;
+
+  --color-white: oklch(0.99 0 0);
+  --color-black: oklch(0.11 0 0);
+  --color-gray: oklch(0.75 0 0);
+
+  --animate-spin: logo-spin infinite 10s linear;
+  @keyframes logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+@layer base {
+  h1 {
+    @apply text-5xl leading-normal
+  }
+  nav > section > a {
+    @apply font-primary font-bold bg-white text-black p-1 sm:p-2 border-4 border-transparent underline text-2xl;
+    @variant hover {
+      @apply border-black button-shadow transition-all duration-200;
+    }
+    @variant focus {
+      @apply border-black transition-shadow duration-200;
+    }
+  }
+  nav > aside > a {
+    @apply text-4xl bg-white text-black p-1 sm:p-2;
+  }
+  button {
+    @apply border-4 p-2 text-xl font-medium font-mono bg-white border-black text-black cursor-pointer;
+    @variant hover {
+      @apply button-shadow transition-all duration-200;
+    }
+  }
+  button:focus,
+  button:focus-visible {
+    @apply border-solid
+  }
+  blockquote {
+    @apply relative pl-6;
+  }
+  blockquote::before {
+    @apply content-[''] absolute h-full w-2 sm:w-3 sm:bg-[repeating-linear-gradient(45deg,_black_0%,_black_4%,_transparent_4%,_transparent_8%)] bg-[repeating-linear-gradient(45deg,_black_0%,_black_2%,_transparent_2%,_transparent_4%)] top-0 left-0;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-white border-8 border-black inset-shadow
+  }
+  .keyword {
+    @apply bg-black text-white py-1 px-2 cursor-default font-mono;
+    @variant hover {
+      @apply button-shadow transition-all duration-200;
+    }
+  }
+  .profile {
+    filter: saturate(0%) contrast(200%) brightness(100%);
+  }
+  .logo {
+    will-change: filter;
+    transition: filter 300ms;
+    @apply animate-spin
+  }
+}
+
+@utility test {
+  @apply border-1 border-red-500;
+}
+
+@utility inset-shadow {
+  box-shadow: 5px 5px oklch(0.7 0.0054 71.04) inset;
+}
+@utility button-shadow {
+  box-shadow: 5px 5px oklch(0.7 0.0054 71.04);
+}
+
+:root {
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
