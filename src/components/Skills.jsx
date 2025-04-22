@@ -2,7 +2,7 @@ import { FaPython, FaReact } from "react-icons/fa6";
 
 function Skills() {
     return (
-        <section id='Skills' className='h-[calc(100vh-5rem)] flex flex-col gap-2 md:gap-4 snap-start scroll-mt-20 px-4 md:px-2 bg-black justify-center -z-10'>
+        <section id='Skills' className='h-[calc(100vh-5rem)] flex flex-col gap-2 md:gap-4 snap-start sm:scroll-mt-20 px-4 md:px-2 bg-black justify-center mb-20 sm:mb-0 pb-20 -z-10'>
             <header className="">
                 <h1 className='font-mono text-white text-center'>SKILLS</h1>
             </header>

@@ -10,7 +10,7 @@ function App() {
   return (
     <div className='grid auto-rows-auto h-screen overflow-hidden'>
       <Nav />
-      <main className='row-start-2 overflow-y-scroll snap-mandatory snap-y'>
+      <main className='row-start-2 grid auto-rows-auto overflow-y-scroll snap-mandatory snap-y'>
         <Landing />
         <Skills />
         <Projects />

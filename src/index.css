@@ -26,7 +26,7 @@
     @apply text-5xl leading-normal
   }
   nav > section > a {
-    @apply font-primary font-bold bg-white text-black p-1 sm:p-2 border-4 border-transparent underline text-2xl;
+    @apply font-primary font-bold bg-white text-black p-1 sm:p-2 border-4 border-transparent underline text-xl sm:text-2xl;
     @variant hover {
       @apply border-black button-shadow transition-all duration-200;
     }
@@ -35,12 +35,12 @@
     }
   }
   nav > aside > a {
-    @apply text-4xl bg-white text-black p-1 sm:p-2;
+    @apply text-2xl sm:text-4xl bg-white text-black p-1 sm:p-2;
   }
   button {
     @apply border-4 p-2 text-xl font-medium font-mono bg-white border-black text-black cursor-pointer;
     @variant hover {
-      @apply button-shadow transition-all duration-200;
+      @apply underline button-shadow transition-all duration-200;
     }
   }
   button:focus,
@@ -60,7 +60,7 @@
     @apply bg-white border-8 border-black inset-shadow
   }
   .keyword {
-    @apply bg-black text-white py-1 px-2 cursor-default font-mono;
+    @apply bg-black text-white py-1 px-2 cursor-default font-mono text-xs md:text-sm lg:text-lg;
     @variant hover {
       @apply button-shadow transition-all duration-200;
     }

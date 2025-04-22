@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://manishambre5.github.io/manishambre5.github.io",
+  "homepage": "https://manishambre5.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
