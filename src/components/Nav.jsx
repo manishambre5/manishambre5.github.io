@@ -2,7 +2,7 @@ import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa6'
 
 function Nav () {
     return (
-        <nav className='w-full h-20 flex flex-nowrap gap-4 items-center justify-between fixed sm:top-0 bottom-0 p-2 bg-white z-10'>
+        <nav className='shrink-0 w-full h-20 flex flex-nowrap gap-4 items-center justify-between p-2 bg-white'>
             <aside className='shrink-0 flex gap-2 sm:gap-7'>
                 <a href='https://www.linkedin.com/in/manishambre5/'><FaLinkedin className='' /></a>
                 <a href='https://github.com/manishambre5'><FaGithub className='' /></a>

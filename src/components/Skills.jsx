@@ -1,12 +1,12 @@
-import { FaPython, FaReact } from "react-icons/fa6";
+import { FaArrowDown, FaPython, FaReact } from "react-icons/fa6";
 
 function Skills() {
     return (
-        <section id='Skills' className='h-[calc(100vh-5rem)] flex flex-col gap-2 md:gap-4 snap-start sm:scroll-mt-20 px-4 md:px-2 bg-black justify-center mb-20 sm:mb-0 pb-20 -z-10'>
-            <header className="">
+        <section id='Skills' className='shrink-0 pb-20 h-full flex flex-col gap-2 md:gap-4 snap-start px-4 md:px-2 bg-black justify-around items-center'>
+            <header className="shrink-0">
                 <h1 className='font-mono text-white text-center'>SKILLS</h1>
             </header>
-            <section className="grid md:grid-flow-col gap-4 items-center justify-center">
+            <section className="shrink-0 grid md:grid-flow-col gap-4 items-center justify-center">
                 <article className='flex flex-col justify-start items-center md:items-start gap-2 md:gap-4 bg-white font-mono h-full max-w-lg p-4 inset-shadow'>
                     <header className="flex gap-2 md:gap-4 justify-start items-center">
                         <FaReact className="logo text-3xl" />
@@ -57,6 +57,7 @@ function Skills() {
                     </ul>
                 </article>
             </section>
+            <FaArrowDown className='shrink-0 text-white text-3xl go' />
         </section>
     );
 }
