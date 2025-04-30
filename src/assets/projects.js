@@ -1,5 +1,12 @@
 export default [
     {
+        title: "Triads",
+        subtitle: "A word puzzle game that challenges players to identify connections among the words in a grid format.",
+        techstack: ["JavaScript","TailwindCSS"],
+        github: "https://github.com/manishambre5/triads",
+        viewlive: "https://manishambre5.github.io/triads/"
+    },
+    {
         title: "next flick",
         subtitle: "A movie recommendation app that recommends good cinema.",
         techstack: ["React JS","TailwindCSS","Flask"],
