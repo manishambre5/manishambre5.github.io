@@ -19,8 +19,8 @@ function Projects () {
                             ))}
                         </ul>
                         <section className='flex gap-2 items-end justify-end'>
-                            <a href={project.github}><button>GitHub</button></a>
-                            <a href={project.viewlive}><button>View Live</button></a>
+                            {project.github && <a href={project.github}><button>GitHub</button></a>}
+                            {project.viewlive && <a href={project.viewlive}><button>View Live</button></a>}
                         </section>
                     </article>
                 ))}
