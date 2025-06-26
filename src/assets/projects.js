@@ -1,5 +1,12 @@
 export default [
     {
+        title: "Sexism Identification in Social Networks",
+        subtitle: "Ongoing Academic Research in Sexism Identification in social networks. Involves Sexism Identification, Intent Classification and Sexism Categorization using the latest EXIST dataset.",
+        techstack: ["Python","Pandas", "Hugging Face", "XLM-RoBERTa", "DeBERTa", "Mistral AI"],
+        github: "",
+        viewlive: ""
+    },
+    {
         title: "Triads",
         subtitle: "A word puzzle game that challenges players to identify connections among the words in a grid format.",
         techstack: ["JavaScript","TailwindCSS"],
