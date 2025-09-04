@@ -10,7 +10,7 @@ function Skills() {
                 <article className='flex flex-col justify-start items-center md:items-start gap-2 md:gap-4 bg-white font-mono h-full max-w-lg p-4 inset-shadow'>
                     <header className="flex gap-2 md:gap-4 justify-start items-center">
                         <FaReact className="logo text-3xl" />
-                        <h2 className="sm:text-2xl">Full Stack Web Development</h2>
+                        <h2 className="sm:text-2xl">Programming & Web Development</h2>
                     </header>
                     <h3 className="font-bold">Tech Stack</h3>
                     <ul className="flex gap-2 sm:gap-4 flex-wrap justify-center md:justify-start">
@@ -20,10 +20,13 @@ function Skills() {
                         <li className="keyword">CSS3</li>
                         <li className="keyword">JavaScript</li>
                         <li className="keyword">Python</li>
+                        <li className="keyword">C</li>
+                        <li className="keyword">Java</li>
+                        <li className="keyword">C++</li>
+                        <li className="keyword">R</li>
                         <li className="keyword">TypeScript</li>
                         <li className="keyword">Vue.js</li>
                         <li className="keyword">Node.js</li>
-                        <li className="keyword">REST API</li>
                         <li className="keyword">Flask</li>
                         <li className="keyword">Django</li>
                         <li className="keyword">PHP</li>
@@ -51,9 +54,8 @@ function Skills() {
                         <li className="keyword">SciPy</li>
                         <li className="keyword">SQL</li>
                         <li className="keyword">Power BI</li>
-                        <li className="keyword">R</li>
-                        <li className="keyword">C</li>
-                        <li className="keyword">Linux</li>
+                        <li className="keyword">Tableau</li>
+                        <li className="keyword">MS Excel</li>
                     </ul>
                 </article>
             </section>

@@ -2,7 +2,7 @@ export default [
     {
         title: "Sexism Identification in Social Networks",
         subtitle: "Ongoing Academic Research in Sexism Identification in social networks. Involves Sexism Identification, Intent Classification and Sexism Categorization using the latest EXIST dataset.",
-        techstack: ["Python","Pandas", "Hugging Face", "XLM-RoBERTa", "DeBERTa", "Mistral AI"],
+        techstack: ["Python", "Pandas", "Hugging Face", "XLM-RoBERTa", "DeBERTa", "LLM", "DeepSeek", "Prompt Engineering"],
         github: "",
         viewlive: ""
     },
@@ -37,7 +37,7 @@ export default [
     {
         title: "Vivek / Reason",
         subtitle: "A website designed as a promotional tool for an award winning documentary.",
-        techstack: ["TailwindCSS","JavaScript"],
+        techstack: ["CSS","JavaScript"],
         github: "https://github.com/manishambre5/vivek-reason",
         viewlive: "https://manishambre5.github.io/vivek-reason/"
     }
