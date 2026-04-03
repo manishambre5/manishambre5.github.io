@@ -36,6 +36,13 @@ const projects: Project[] = [
         viewlive: "https://manishambre5.github.io/triads/"
     },
     {
+        title: "YinYang",
+        subtitle: "A gird puzzle game that challenges players to balance the grid based on a set of rules.",
+        techstack: ["JavaScript","TailwindCSS"],
+        github: "https://github.com/manishambre5/yinyang",
+        viewlive: "https://manishambre5.github.io/yinyang/"
+    },
+    {
         title: "next flick",
         subtitle: "A movie recommendation app that recommends good cinema.",
         techstack: ["React JS","TailwindCSS","Flask"],
