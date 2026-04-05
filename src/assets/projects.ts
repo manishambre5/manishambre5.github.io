@@ -15,6 +15,13 @@ const projects: Project[] = [
         viewlive: ""
     },
     {
+        title: "Miranda",
+        subtitle: "An interactive note-taking app.",
+        techstack: ["React Router", "TypeScript", "React JS","TailwindCSS"],
+        github: "https://github.com/manishambre5/miranda",
+        viewlive: "https://manishambre5.github.io/miranda/"
+    },
+    {
         title: "let him cook!",
         subtitle: "A handy Recipe Generator that generates a recipe using AI with a list of ingredients.",
         techstack: ["React JS","TailwindCSS","Express.js", "react-markdown", "tailwindcss-typography", "HuggingFace Inference", "DeepSeek v3.2", "LLM", "Prompt Engineering"],
