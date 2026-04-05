@@ -6,9 +6,9 @@ export const MainContent = () => {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   return (
-    <div className="flex flex-col gap-2 py-4 cursor-default font-primary">
+    <div className="mx-4 flex flex-col gap-2 py-4 cursor-default font-primary">
         <h2 className='uppercase text-slate-800 font-semibold'>Projects</h2>
-        <div className='flex flex-col gap-12'>
+        <div className='flex flex-col gap-2'>
         {projects.map((project, index) => (
             <article key={index} className="flex flex-col gap-2 py-4">
                 <h2 className="text-2xl underline hover:text-sky-600 cursor-pointer flex gap-2 items-center w-fit" onClick={() =>

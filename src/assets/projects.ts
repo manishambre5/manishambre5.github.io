@@ -16,8 +16,8 @@ const projects: Project[] = [
     },
     {
         title: "Miranda",
-        subtitle: "An interactive note-taking app.",
-        techstack: ["React Router", "TypeScript", "React JS","TailwindCSS"],
+        subtitle: "An interactive note-taking app inspired form the Jupyter Notebook UI.",
+        techstack: ["TypeScript", "React Router", "React JS","TailwindCSS"],
         github: "https://github.com/manishambre5/miranda",
         viewlive: "https://manishambre5.github.io/miranda/"
     },
@@ -51,8 +51,8 @@ const projects: Project[] = [
     },
     {
         title: "next flick",
-        subtitle: "A movie recommendation app that recommends good cinema.",
-        techstack: ["React JS","TailwindCSS","Flask"],
+        subtitle: "A movie recommendation app that recommends good cinema based on an input movie.",
+        techstack: ["React JS","TailwindCSS","Python","Scikit-learn","Flask"],
         github: "https://github.com/manishambre5/next-flick",
         viewlive: ""
     },
@@ -65,7 +65,7 @@ const projects: Project[] = [
     },
     {
         title: "PINT",
-        subtitle: "Pinterest-Inspired Web Feed",
+        subtitle: "Pinterest-Inspired Web Feed with a masonry grid.",
         techstack: ["TailwindCSS","React JS"],
         github: "https://github.com/manishambre5/pint",
         viewlive: "https://manishambre5.github.io/pint/"
