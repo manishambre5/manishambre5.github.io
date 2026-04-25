@@ -6,7 +6,7 @@ import { Nav } from './components/Nav'
 function App() {
 
   return (
-    <div className='flex flex-col gap-4 lg:mx-64 sm:mx-32'>
+    <div className='flex flex-col gap-4 xl:mx-48 lg:mx-16'>
       <Nav />
       <Hero />
       <MainContent />

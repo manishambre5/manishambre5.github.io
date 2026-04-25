@@ -15,6 +15,20 @@ const projects: Project[] = [
         viewlive: ""
     },
     {
+        title: "GuessEra",
+        subtitle: "A history game in which players try to guess the year of a historical event. Idea inspired by GeoGuessr.",
+        techstack: ["TypeScript", "React", "TailwindCSS"],
+        github: "https://github.com/manishambre5/guessera",
+        viewlive: "https://manishambre5.github.io/guessera/"
+    },
+    {
+        title: "MainPage",
+        subtitle: "A modern redesign of the Wikipedia main page.",
+        techstack: ["TypeScript","React","TailwindCSS","Wikipedia REST API"],
+        github: "https://github.com/manishambre5/genesis",
+        viewlive: "https://manishambre5.github.io/main-page/"
+    },
+    {
         title: "Miranda",
         subtitle: "An interactive note-taking app inspired form the Jupyter Notebook UI.",
         techstack: ["TypeScript", "React Router", "React JS","TailwindCSS"],

@@ -7,10 +7,18 @@
 @theme {
   --font-heading: "Playfair Display", serif;
   --font-primary: "Google Sans Flex", sans-serif;
-}
+  
+  @keyframes close-eye {
+    0%, 80% { opacity: 1; }
+    85%, 100% { opacity: 0; }
+  }
+  @keyframes open-eye {
+    0%, 15% { opacity: 1; }
+    20%, 100% { opacity: 0; }
+  }
 
-h2 {
-  @apply font-primary text-2xl;
+  --animate-eye-open: open-eye 4s infinite;
+  --animate-eye-close: close-eye 4s infinite reverse;
 }
 
 a {
