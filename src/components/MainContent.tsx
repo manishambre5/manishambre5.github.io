@@ -1,4 +1,4 @@
-import { LuEye, LuPlus, LuMinus, LuEyeClosed, LuList, LuGrid2X2, LuRows3 } from 'react-icons/lu';
+import { LuEye, LuPlus, LuMinus, LuEyeClosed, LuGrid2X2, LuRows3, LuLayoutList, LuLayoutGrid } from 'react-icons/lu';
 import projects from '../assets/projects';
 import { useState } from 'react';
 import { FaGithub } from 'react-icons/fa';
@@ -15,11 +15,11 @@ export const MainContent = () => {
 
             {/* Layout view toggle */}
             <div className="flex gap-4 items-center justify-center" onClick={() => setView(prev => (prev === "list" ? "grid" : "list"))}>
-                <LuRows3
-                    className={`transition-all duration-300 size-8 ${ view === "list" ? "text-sky-600" : "hover:text-sky-600" }`}
+                <LuLayoutList
+                    className={`transition-all duration-300 size-6 ${ view === "list" ? "text-sky-600" : "hover:text-sky-600" }`}
                 />
-                <LuGrid2X2
-                    className={`transition-all duration-300 size-8 ${ view === "grid" ? "text-sky-600" : "hover:text-sky-600" }`}
+                <LuLayoutGrid
+                    className={`transition-all duration-300 size-6 ${ view === "grid" ? "text-sky-600" : "hover:text-sky-600" }`}
                 />
             </div>
 
@@ -95,7 +95,7 @@ export const MainContent = () => {
             
             <main className='grid grid-cols-2 md:grid-cols-3 gap-2'>
                 {projects.map((project, index) => (
-                <article key={index} className={`flex flex-col items-center justify-center gap-2 p-2 border-2 md:border-4 border-slate-100 rounded-sm aspect-square size-full`}>
+                <article key={index} className={`flex flex-col items-center justify-center gap-1 sm:gap-2 p-1 md:p-4 sm:p-2 border-2 md:border-4 rounded-sm aspect-square size-full ${openIndex === index ? "border-sky-600" : "border-slate-100"}`}>
 
                     {/* Accordion trigger */}
                     <div className={`flex w-full gap-2 ${openIndex === index ? "text-xl justify-between items-center" : "text-xl lg:text-4xl sm:text-3xl justify-center items-center size-full flex-col"}`}>
@@ -122,7 +122,7 @@ export const MainContent = () => {
                     {/* Accordion content */}
                     <div
                     className={`space-y-2 overflow-hidden ${
-                        openIndex === index ? "max-h-1/2 opacity-100 overflow-y-scroll" : "max-h-0 opacity-0"
+                        openIndex === index ? "opacity-100 overflow-y-scroll" : "max-h-0 opacity-0"
                     }`}
                     >
                         <h3 className='text-sm'>{project.subtitle}</h3>

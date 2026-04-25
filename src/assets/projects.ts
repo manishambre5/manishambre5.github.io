@@ -43,7 +43,7 @@ const projects: Project[] = [
         viewlive: "https://manishambre5.github.io/let-him-cook/"
     },
     {
-        title: "Sexism Identification in Social Networks",
+        title: "EXIST (Sexism Identification)",
         subtitle: "Academic Research Lab in Sexism Identification in social networks involving classification of tweets from the EXIST dataset.",
         techstack: ["Python", "Pandas", "HuggingFace", "XLM-RoBERTa", "DeBERTa", "LLM", "DeepSeek", "Llama", "Prompt Engineering"],
         github: "https://github.com/manishambre5/sexism_identification",
